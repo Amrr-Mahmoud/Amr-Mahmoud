@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="styles.css">
+      <!-- =====BOX ICONS===== -->
+      <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+      <title>Amr Mahmoud</title>
+   </head>
+   <style>
+      /* CARDS */
+      .cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      }
+      .card {
+      margin: 20px;
+      padding: 20px;
+      width: 500px;
+      min-height: 200px;
+      display: grid;
+      grid-template-rows: 20px 50px 1fr 50px;
+      border-radius: 10px;
+      box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.25);
+      transition: all 0.2s;
+      }
+      .card:hover {
+      box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.4);
+      transform: scale(1.01);
+      }
+      .card__link,
+      .card__exit,
+      .card__icon {
+      position: relative;
+      text-decoration: none;
+      color: rgba(255, 255, 255, 0.9);
+      }
+      .card__link::after {
+      position: absolute;
+      top: 25px;
+      left: 0;
+      content: "";
+      width: 0%;
+      height: 3px;
+      background-color: rgba(255, 255, 255, 0.6);
+      transition: all 0.5s;
+      }
+      .card__link:hover::after {
+      width: 100%;
+      }
+      .card__exit {
+      grid-row: 1/2;
+      justify-self: end;
+      }
+      .card__icon {
+      grid-row: 2/3;
+      font-size: 30px;
+      }
+      .card__title {
+      grid-row: 3/4;
+      font-weight: 400;
+      color: #ffffff;
+      }
+      .card__apply {
+      grid-row: 4/5;
+      align-self: center;
+      }
+      /* CARD BACKGROUNDS */
+      .card-1 {
+      background: radial-gradient(#1fe4f5, #3fbafe);
+      }
+      .card-2 {
+      background: radial-gradient(#fbc1cc, #fa99b2);
+      }
+      .card-3 {
+      background: radial-gradient(#76b2fe, #b69efe);
+      }
+      .card-4 {
+      background: radial-gradient(#60efbc, #58d5c9);
+      }
+      .card-5 {
+      background: radial-gradient(#f588d8, #c0a3e5);
+      }
+      .card-6 {
+      background: radial-gradient(#AB706A, #D0766D);
+      }
+      .card-7 {
+      background: radial-gradient(#C6CE16, #ABAB6A);
+      }
+      .card-8 {
+      background: radial-gradient(#979883, #BDBDB7);
+      }
+	  .card-9 {
+      background: radial-gradient(#C8C8C8, #9F9F9F);
+      }
+	  .card-10 {
+      background: radial-gradient(#581845, #C8C8C8);
+      }
+      /* RESPONSIVE */
+      @media (max-width: 1600px) {
+      .cards {
+      justify-content: center;
+      }
+      }
+   </style>
+   <body>
+      <!--===== HEADER =====-->
+      <header class="l-header">
+         <nav class="nav bd-grid">
+            <div>
+               <a class="nav__logo">Amr Mahmoud</a>
+            </div>
+            <div class="nav__menu" id="nav-menu">
+               <ul class="nav__list" style="list-style: none;">
+                  <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+                  <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                  <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                  <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
+				  <li class="nav__item"><a href="#Volunteering" class="nav__link">Volunteering</a></li>
+                  <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+               </ul>
+            </div>
+            <div class="nav__toggle" id="nav-toggle">
+               <i class='bx bx-menu'></i>
+            </div>
+         </nav>
+      </header>
+      <main class="l-main">
+         <!--===== HOME =====-->
+         <section class="home bd-grid" id="home">
+            <div class="home__data">
+               <h1 class="home__title">Hi,<br>I'm <span class="home__title-color">Amr Mahmoud</span><br> Junior Developer</h1>
+               <a href="Amr Mahmoud Abdelghany.pdf" class="button">Get my CV</a> 
+            </div>
+            <div class="home__social">
+               <a href="https://www.linkedin.com/in/amr-mahmoud-a3b554217/" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
+               <a href="mailto:amrmahmoudabdelghany@gmail.com" class="home__social-icon"><i class='bx bxl-google' ></i></a>
+               <a href="https://github.com/Amrr-Mahmoud" class="home__social-icon"><i class='bx bxl-github' ></i></a>
+            </div>
+            <div class="home__img">    
+               <img src="photo.png" alt="">
+            </div>
+         </section>
+         <!--===== ABOUT =====-->
+         <section class="about section " id="about">
+            <h2 class="section-title">About</h2>
+            <div class="about__container bd-grid">
+               <div class="about__img">
+                  <img src="about.jpg" alt="">
+               </div>
+               <div>
+                  <h2 class="about__subtitle">Fresh gratuated Student</h2>
+                  <p class="about__text">Recent College Graduate with a major in Computer Science and a minor in Software Engineering, seeking an entry-level position as a Junior Developer.</p>
+               </div>
+            </div>
+         </section>
+         <!--===== EDUCATION =====-->
+         <section class="about section " id="">
+            <h2 class="section-title">Education</h2>
+            <div class="about__container bd-grid">
+               <div>
+                  <h2 class="about__subtitle">Arab Academy for Science and Technology</h2>
+                  <div class="about__text">
+                     <ul>
+                        <li>Bachelor’s Degree of Computer Science. (2017-2021).</li>
+                        <li>Major Study: Computer Science (CS).</li>
+                        <li>Minor Study: Software Engineering (SE).</li>
+                        <li>Degree: GPA 2.8 (good).</li>
+                     </ul>
+                     <a href="Certificate.jpeg" class="button">Certificate</a>
+                  </div>
+               </div>
+               <div class="education__img">
+                  <img src="logo.jpg" alt="">
+               </div>
+               <div>
+                  <h2 class="about__subtitle">Graduation Project</h2>
+                  <p class="about__text">
+                     Developing IoT based Hardware to measure Heart Rate, Temperature, Saturation of oxygen in the blood, and fall detection all interconnected with Web Application and Mobile application (Android) using firebase and MySQL database to monitoring patients..
+                  </p>
+                  <ul>
+                     <li>Grade: A+</li>
+                  </ul>
+               </div>
+               <div class="education__img">
+                  <img src="Graduation.jpg" alt="">
+               </div>
+            </div>
+         </section>
+         <!--===== SKILLS =====-->
+         <section class="skills section" id="skills">
+            <h2 class="section-title">Skills</h2>
+            <div class="skills__container bd-grid">
+               <div>
+                  <h2 class="skills__subtitle">Programming Languages and Computer Science Knowledge</h2>
+                  <div class="skills__data">
+                     <div class="skills__names">
+                        <i class='bx bx-check skills__icon'></i>
+                        <span class="skills__name">HTML</span>
+                     </div>
+                     <div class="skills__bar skills__html">
+                     </div>
+                     <div>
+                        <span class="skills__percentage">95%</span>
+                     </div>
+                  </div>
+                  <div class="skills__data">
+                     <div class="skills__names">
+                        <i class='bx bx-check skills__icon'></i>
+                        <span class="skills__name">CSS</span>
+                     </div>
+                     <div class="skills__bar skills__css">
+                     </div>
+                     <div>
+                        <span class="skills__percentage">95%</span>
+                     </div>
+                  </div>
+                  <div class="skills__data">
+                     <div class="skills__names">
+                        <i class='bx bx-check skills__icon' ></i>
+                        <span class="skills__name">JAVASCRIPT</span>
+                     </div>
+                     <div class="skills__bar skills__js">
+                     </div>
+                     <div>
+                        <span class="skills__percentage">80%</span>
+                     </div>
+                  </div>
+                  <div class="skills__data">
+                     <div class="skills__names">
+                        <i class='bx bx-check skills__icon'></i>
+                        <span class="skills__name">PHP</span>
+                     </div>
+                     <div class="skills__bar skills__php">
+                     </div>
+                     <div>
+                        <span class="skills__percentage">75%</span>
+                     </div>
+                  </div>
+                  <div class="skills__data">
+                     <div class="skills__names">
+                        <i class='bx bx-check skills__icon'></i>
+                        <span class="skills__name">JQuery</span>
+                     </div>
+                     <div class="skills__bar skills__jq">
+                     </div>
+                     <div>
+                        <span class="skills__percentage">60%</span>
+                     </div>
+                  </div>
+                  <div class="skills__data">
+                     <div class="skills__names">
+                        <i class='bx bx-check skills__icon'></i>
+                        <span class="skills__name">Bootstrap</span>
+                     </div>
+                     <div class="skills__bar skills__bs">
+                     </div>
+                     <div>
+                        <span class="skills__percentage">65%</span>
+                     </div>
+                  </div>
+                  <div class="skills__data">
+                     <div class="skills__names">
+                        <i class='bx bx-check skills__icon'></i>
+                        <span class="skills__name">Python</span>
+                     </div>
+                     <div class="skills__bar skills__python">
+                     </div>
+                     <div>
+                        <span class="skills__percentage">70%</span>
+                     </div>
+                  </div>
+                  <div class="skills__data">
+                     <div class="skills__names">
+                        <i class='bx bx-check skills__icon'></i>
+                        <span class="skills__name">Java</span>
+                     </div>
+                     <div class="skills__bar skills__java">
+                     </div>
+                     <div>
+                        <span class="skills__percentage">85%</span>
+                     </div>
+                  </div>
+                  <div class="skills__data">
+                     <div class="skills__names">
+                        <i class='bx bx-check skills__icon'></i>
+                        <span class="skills__name">C++</span>
+                     </div>
+                     <div class="skills__bar skills__c">
+                     </div>
+                     <div>
+                        <span class="skills__percentage">80%</span>
+                     </div>
+                  </div>
+                  <div class="skills__data">
+                     <div class="skills__names">
+                        <i class='bx bx-check skills__icon'></i>
+                        <span class="skills__name">C</span>
+                     </div>
+                     <div class="skills__bar skills__c">
+                     </div>
+                     <div>
+                        <span class="skills__percentage">80%</span>
+                     </div>
+                  </div>
+               </div>
+               <div>              
+                  <img src="code.png" alt="" class="skills__img">
+               </div>
+			   </div>
+         </section>
+         <div class="cards">
+         <div class="card card-9" style="width:1000px;">
+         <div class="card__icon"><i class="bx bxs-check-square"></i></div>
+         <p class="card__exit"><i class="fas fa-times"></i></p>
+        <div class="about__text"><ul>
+        <span style="color:#900C3F "><h1>Basic Knowledge in:</h1></span> 
+		 <li>Linux.</li>
+		 <li>Networking.</li>
+         <li>Security.</li>
+         <li>Virtualization.</li>
+         <li>SQL.</li>
+         <li>MATLAB.</li>
+		 </ul> </div> 
+         <p class="card__apply">
+         </p>
+         </div>
+         </div>
+		 
+		   <div class="cards">
+         <div class="card card-9" style="width:1000px;">
+         <div class="card__icon"><i class="bx bxs-check-square"></i></div>
+         <p class="card__exit"><i class="fas fa-times"></i></p>
+		 <div class="about__text"><ul>
+        <span style="color:#900C3F "><h1>Other Knowledge:</h1></span> 
+		 <li><h4>Microsoft Office package:</h4></li><p>Microsoft Word, Power Point, Excel, Access, Microsoft Project.</p>
+         <li><h4>Media:</h4></li><p>Adobe Photoshop, Adobe Premiere, Audacity.</p>
+		 </div></ul> 
+         <p class="card__apply">
+         </p>
+         </div>
+         </div>
+         <div></br></div>
+         
+         <div></br></div>
+		 <section class="skills section">
+		 <div class="skills__container bd-grid">
+         <h2 class="about__subtitle">Languages</h2><div></br></div>
+         <div class="about__text">
+         <div class="skills__data">
+         <div class="skills__names">
+         <i class='bx bxs-quote-single-left skills__icon'></i>
+         <span class="skills__name">Arabic</span>
+         </div>
+         <div class="skills__bar skills__ar">
+         </div>
+         <div>
+         <span class="skills__percentage">Mother Tongue</span>
+         </div>
+         </div>
+         <div class="skills__data">
+         <div class="skills__names">
+         <i class='bx bxs-quote-single-left skills__icon'></i>
+         <span class="skills__name">English</span>
+         </div>
+         <div class="skills__bar skills__java">
+         </div>
+         <div>
+         <span class="skills__percentage">Fluent</span>
+         </div>
+         </div>
+         <div class="skills__data">
+         <div class="skills__names">
+         <i class='bx bxs-quote-single-left skills__icon'></i>
+         <span class="skills__name">French</span>
+         </div>
+         <div class="skills__bar skills__fr">
+         </div>
+         <div>
+         <span class="skills__percentage">Basics</span>
+         </div>
+         </div>
+         </div>
+		                <div>              
+                  <img src="learning.jpg" alt="" class="skills__img">
+               </div>
+		 </div>
+		 <div id="projects"></div>
+	     </section>		 
+         
+         <!--===== Projects =====-->
+         <section>
+            <h2 class="section-title">Projects</h2>
+                  <div class="cards">
+                     <div class="card card-1">
+                        <div class="card__icon"><i class="bx bx-slideshow"></i></div>
+                        <p class="card__exit"><i class="fas fa-times"></i></p>
+                        <h1 class="card__title">Remote Healthcare System.</h1>
+                        <h4 class="card__title">(Graduation Project).</h4>
+                        <p class="card__apply">
+                           <a class="card__link" href="https://drive.google.com/file/d/1lh4F2Xob8dzx8Z4PqB8CGPz8eDknb4KQ/view?usp=sharing">View Project Video<i class="fas fa-arrow-right"></i></a>
+                        </p>
+                     </div>
+                     <div class="card card-2">
+                        <div class="card__icon"><i class="bx bxs-first-aid"></i></div>
+                        <p class="card__exit"><i class="fas fa-times"></i></p>
+                        <h1 class="card__title">Online Clinic System.</h1>
+                        <h4 class="card__title">(HTML – CSS – Bootstrap – JavaScript – PHP – MySQL).</h4>
+                        <p>(Best Project Award).</p>
+                        <p class="card__apply">
+                           <a class="card__link" href="bestproject.jpeg">View Certificate <i class="fas fa-arrow-right"></i></a>
+                        </p>
+                     </div>
+                     <div class="card card-3">
+                        <div class="card__icon"><i class="bx bxs-plane-alt"></i></div>
+                        <p class="card__exit"><i class="fas fa-times"></i></p>
+                        <h2 class="card__title">Airline Reservation System.</h2>
+                        <h4 class="card__title">(HTML – CSS – Bootstrap – JavaScript – PHP – MySQL).</h4>
+                     </div>
+                     <div class="card card-4">
+                        <div class="card__icon"><i class="bx bxs-image"></i></div>
+                        <p class="card__exit"><i class="fas fa-times"></i></p>
+                        <h2 class="card__title">Cartooning an Image.</h2>
+                        <h4 class="card__title">(Open CV – Python).</h4>
+                        <p class="card__apply">
+                           <a class="card__link" href="Cartooning Image by Amr Mahmoud.pdf">View Project<i class="fas fa-arrow-right"></i></a>
+                        </p>
+                     </div>
+                     <div class="card card-5">
+                        <div class="card__icon"><i class="bx bx-lock"></i></div>
+                        <p class="card__exit"><i class="fas fa-times"></i></p>
+                        <h2 class="card__title">Rail Fence, Row Transposition Encryption and Decryption techniques.</h2>
+                        <h4 class="card__title">Java and JavaFX (GUI).</h4>
+                        <p class="card__apply">
+                           <a class="card__link" href="https://github.com/Amrr-Mahmoud/Rail-Fence.git">Get Code<i class="fas fa-arrow-right"></i></a>
+                        </p>
+                     </div>
+                     <div class="card card-6">
+                        <div class="card__icon"><i class="bx bxs-joystick-alt"></i></div>
+                        <p class="card__exit"><i class="fas fa-times"></i></p>
+                        <h2 class="card__title">SUDOKU Game.</h2>
+                        <h4 class="card__title">Java and JavaFX (GUI).</h4>
+                        <p class="card__apply">
+                           <a class="card__link" href="https://github.com/Amrr-Mahmoud/Sudoku-Game.git">Get Code<i class="fas fa-arrow-right"></i></a>
+                        </p>
+                     </div>
+                     <div class="card card-7">
+                        <div class="card__icon"><i class="bx bx-code-alt"></i></div>
+                        <p class="card__exit"><i class="fas fa-times"></i></p>
+                        <h2 class="card__title">Numerical Methods using MATLAB.</h2>
+                        <h4 class="card__title">(Simpson – Simple Midpoint – Composite Midpoint – Jaccobi Method – Gauss Method).</h4>
+                        <p class="card__apply">
+                           <a class="card__link" href="https://github.com/Amrr-Mahmoud/Numerical-Methods.git">Get Code<i class="fas fa-arrow-right"></i></a>
+                        </p>
+                     </div>
+                     <div class="card card-8">
+                        <div class="card__icon"><i class="bx bxs-file-pdf"></i></div>
+                        <p class="card__exit"><i class="fas fa-times"></i></p>
+                        <h2 class="card__title">Network Security Firewall Technologies & IDS.</h2>
+                        <h4 class="card__title">(Scientific Paper).</h4>
+                        <p class="card__apply">
+                           <a class="card__link" href="Network Security Firewall Technologies & IDS.pdf">View Paper <i class="fas fa-arrow-right"></i></a>
+                        </p>
+                     </div>
+                  </div>
+         </section>
+		 
+		 
+		  <section class="about section " id="Volunteering">
+            <h2 class="section-title">Volunteering</h2>
+            <div class="about__container bd-grid">
+               <div>
+                  <h2 class="about__subtitle">ENACTUS</h2>
+                  <div class="about__text">
+                     <ul>
+                        <li>Entrepreneur Team ENACTUS AAST Sheraton. (2017-2018).</li>
+						<li>Best Member Award.</li>
+                     </ul>
+                     <a href="enc.jpeg" class="button">Certificate</a>
+                  </div>
+               </div>
+               <div class="education__img">
+                  <img src="en.png" alt="">
+               </div>
+            </div>
+         </section>
+         <!--===== CONTACT =====-->
+         <section class="contact section" id="contact">
+            <h2 class="section-title">Contact</h2>
+<div class="about__container bd-grid">
+               <div>
+                  <i class='bx bxl-whatsapp'><h2 class="about__subtitle">WhatsApp</h2></i>
+                  <div class="about__text">
+                     <ul>
+                     <li>+20 102 325 8881</li>
+                     </ul>
+                  </div>
+               </div>
+               <div>
+                  <i class='bx bxl-google'><h2 class="about__subtitle">Gmail</h2></i>
+                  <div class="about__text">
+                     <ul>
+                     <a href="mailto:amrmahmoudabdelghany@gmail.com"><li>amrmahmoudabdelghany@gmail</li></a>
+                     </ul>
+                  </div>
+               </div>
+			   <div>
+                 <i class='bx bxl-linkedin'> <h2 class="about__subtitle">LinkedIn</h2></i>
+                  <div class="about__text">
+                     <ul>
+                      <a href="https://www.linkedin.com/in/amr-mahmoud-a3b554217/"><li>https://www.linkedin.com/in/amr-mahmoud-a3b554217/</li></a>
+                     </ul>
+                  </div>
+               </div>
+               <div>
+                  <i class='bx bxl-github'><h2 class="about__subtitle">GetHub</h2></i>
+                  <div class="about__text">
+                     <ul>
+                     <a href="https://github.com/Amrr-Mahmoud"><li>https://github.com/Amrr-Mahmoud</li></a>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </section>
+      </main>
+      <!--===== FOOTER =====-->
+      <footer class="footer">
+         <p class="footer__title">By Amr Mahmoud</p>
+         <div class="footer__social">
+            <a href="https://www.facebook.com/amr.mahmoud.16144606/" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
+            <a href="https://www.instagram.com/amrmahmoud_37/" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
+            <a href="https://twitter.com/amrrrmahmoud" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
+         </div>
+      </footer>
+      <!--===== SCROLL REVEAL =====-->
+      <script src="https://unpkg.com/scrollreveal"></script>
+      <!--===== MAIN JS =====-->
+      <script src="main.js"></script>
+   </body>
+</html>
